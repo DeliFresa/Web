@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delifresa - Fresas con Crema</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+            color: #333;
+        }
+        header {
+            background-image: url('https://media.discordapp.net/attachments/1234595663044677774/1259944228591632498/30_sin_titulo_20240708134821.png?ex=668d8600&is=668c3480&hm=37f77a4a6bb4b2832728bd10b1a552b0c3520af6c8d3122f5058f43c6482fa0f&=&format=webp&quality=lossless&width=1024&height=341');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 4em;
+            text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+        }
+        header p {
+            font-size: 1.5em;
+            text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+        }
+        nav {
+            background-color: #FF8CC3;
+            display: flex;
+            justify-content: center;
+            padding: 10px 0;
+        }
+        nav a {
+            color: white;
+            padding: 15px 20px;
+            text-decoration: none;
+            font-size: 1.1em;
+            text-transform: uppercase;
+            transition: background 0.3s;
+        }
+        nav a:hover {
+            background-color: #ff3f98;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            margin: 40px 0 20px;
+            font-size: 2.5em;
+            color: #ff3f98;
+        }
+        .product {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+        .product-card {
+            background-color: white;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            margin: 10px;
+            padding: 20px;
+            text-align: center;
+            width: 300px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+        }
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .product-card h3 {
+            margin: 15px 0;
+            font-size: 1.5em;
+        }
+        .product-card p {
+            font-size: 1.2em;
+            color: #ff3f98;
+        }
+        .social-media {
+            text-align: center;
+            margin-top: 20px;
+        }
+        .social-media a {
+            display: inline-block;
+            margin: 10px;
+        }
+        .social-media img {
+            width: 50px;
+            transition: transform 0.3s;
+        }
+        .social-media img:hover {
+            transform: scale(1.1);
+        }
+        footer {
+            background-color: #ff3f98;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        /* Estilos para dispositivos móviles */
+        @media only screen and (max-width: 768px) {
+            header {
+                padding: 80px 10px;
+            }
+            header h1 {
+                font-size: 3em;
+            }
+            header p {
+                font-size: 1.2em;
+            }
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+            nav a {
+                padding: 10px 15px;
+                font-size: 1em;
+            }
+            .product-card {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delifresa</h1>
+        <p>¡Las mejores fresas con crema!</p>
+    </header>
+    <nav>
+        <a href="#sobre-nosotros">Sobre Nosotros</a>
+        <a href="#precios">Precios</a>
+        <a href="#social">Redes Sociales</a>
+    </nav>
+    <div class="container">
+        <section id="sobre-nosotros">
+            <h2 class="section-title">Sobre Nosotros</h2>
+            <p>Delifresa es una fresería dedicada a ofrecer las mejores fresas con crema, ubicada en el corazón de nuestra comunidad. Desde nuestro inicio en 2024, nos hemos comprometido a proporcionar productos frescos y deliciosos que deleiten a nuestros clientes.</p>
+            <p>Nos encontramos en:</p>
+            <p><br>
+            Peru - Lima</p>
+        </section>
+        <section id="precios">
+            <h2 class="section-title">Nuestros Productos</h2>
+            <div class="product">
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fresas con crema">
+                    <h3>Fresas con Crema</h3>
+                    <p>$5.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fresas con chocolate">
+                    <h3>Fresas con Chocolate</h3>
+                    <p>$6.00</p>
+                </div>
+                <div class="product-card">
+                    <img src="https://via.placeholder.com/300" alt="Fresas con miel">
+                    <h3>Fresas con Miel</h3>
+                    <p>$5.50</p>
+                </div>
+            </div>
+        </section>
+        <section id="social">
+            <h2 class="section-title">Síguenos en nuestras redes sociales</h2>
+            <div class="social-media">
+                <a href="https://wa.me/"><img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp"></a>
+                <a href="https://www.tiktok.com/"><img src="https://static.vecteezy.com/ti/vetor-gratis/p1/6057996-tiktok-logo-on-transparent-background-gratis-vetor.jpg" alt="TikTok"></a>
+                <a href="https://www.facebook.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook"></a>
+                <a href="https://www.instagram.com/"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"></a>
+            </div>
+        </section>
+    </div>
+    <footer>
+        <p>&copy; 2024 Delifresa. Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
